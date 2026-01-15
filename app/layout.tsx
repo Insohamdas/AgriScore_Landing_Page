@@ -16,7 +16,7 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: "AgriScore — Luxury Smart Farming",
+  title: "AgriScore",
   description:
     "Precision agriculture for the modern age. Elevate your yields with AgriScore.",
   keywords: ["smart farming", "precision agriculture", "luxury farming", "India"],
