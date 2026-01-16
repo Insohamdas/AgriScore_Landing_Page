@@ -6,6 +6,12 @@ import { BlogSection } from "@/components/blog-section"
 import { Footer } from "@/components/footer"
 import { CTASection } from "@/components/cta-section"
 import Link from "next/link"
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Precision Agriculture for Sustainable Estates",
+  description: "Redefining the global standard in agriculture. Specialized in soil intelligence, toxin-free farming, and high-yield engineering for elite estates.",
+}
 
 export default function HomePage() {
   return (
