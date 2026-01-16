@@ -86,13 +86,9 @@ export function Footer() {
 
         </div>
 
-        <div className="mt-20 pt-10 border-t border-white/5 grid grid-cols-1 md:grid-cols-3 gap-8 items-center opacity-20 hover:opacity-100 transition-opacity duration-700">
+        <div className="mt-20 pt-10 border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center opacity-20 hover:opacity-100 transition-opacity duration-700">
            <div className="text-[10px] uppercase tracking-[0.5em] font-light text-center md:text-left">
               © 2026 AgriScore Private Limited. All Rights Reserved.
-           </div>
-           
-           <div className="text-[10px] uppercase tracking-[0.5em] font-light text-center">
-              Headquartered in Kolkata • Serving the Nation
            </div>
 
            <div className="flex justify-center md:justify-end gap-x-8">
