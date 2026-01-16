@@ -54,8 +54,8 @@ export default function CareersPage() {
                   </span>
                 </div>
                 <h1 className="text-6xl md:text-9xl font-serif font-light leading-[0.9] tracking-tighter">
-                  Not a Job. <br />
-                  <span className="italic">A Legacy.</span>
+                  Join the Mission. <br />
+                  <span className="italic">Shape the Future.</span>
                 </h1>
               </motion.div>
 
@@ -65,7 +65,7 @@ export default function CareersPage() {
                 transition={{ delay: 0.5, duration: 1.5 }}
                 className="text-xl md:text-2xl text-white/40 font-light leading-relaxed max-w-2xl mx-auto"
               >
-                We aren't building features; we are engineering the biological survival of the planet. If you are satisfied with the status quo, this isn't for you.
+                Join the mission to redefine excellence in precision agriculture. We are engineering the biological resilience of our planet for future generations.
               </motion.p>
 
               <motion.div
