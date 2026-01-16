@@ -20,9 +20,6 @@ export const metadata: Metadata = {
   description:
     "Precision agriculture for the modern age. Elevate your yields with AgriScore.",
   keywords: ["smart farming", "precision agriculture", "luxury farming", "India"],
-  icons: {
-    icon: "/favicon.svg",
-  },
 }
 
 export const viewport: Viewport = {
