@@ -61,7 +61,7 @@ export default function InnovationPage() {
                   <div className="h-[1px] w-12 bg-[#D4AF37]" />
                   <span className="text-[10px] uppercase tracking-[0.6em] text-[#D4AF37] font-bold">Mission Lab</span>
                 </div>
-                <h1 className="text-6xl md:text-8xl font-serif font-light leading-none tracking-tighter">
+                <h1 className="text-5xl md:text-8xl font-serif font-light leading-none tracking-tighter">
                   Architecting <br />
                   <span className="italic">The Restore.</span>
                 </h1>
@@ -71,7 +71,7 @@ export default function InnovationPage() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5, duration: 1.2 }}
-                className="text-xl text-white/40 font-light leading-relaxed max-w-xl"
+                className="text-lg md:text-xl text-white/40 font-light leading-relaxed max-w-xl"
               >
                 At AgriScore, innovation isn't a department—it's our DNA. We are dismantling the barrier between biological heritage and digital intelligence.
               </motion.p>
@@ -81,22 +81,22 @@ export default function InnovationPage() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.5 }}
-              className="relative aspect-square rounded-full border border-white/5 bg-white/[0.02] flex items-center justify-center p-20"
+              className="relative aspect-square rounded-full border border-white/5 bg-white/[0.02] flex items-center justify-center p-10 md:p-20"
             >
                <div className="absolute inset-0 rounded-full border-[1px] border-[#D4AF37]/20 animate-[spin_20s_linear_infinite]" />
                <div className="absolute inset-10 rounded-full border-[1px] border-white/5 animate-[spin_30s_linear_infinite_reverse]" />
-               <Activity className="h-40 w-40 text-[#D4AF37] opacity-50" />
+               <Activity className="h-20 w-20 md:h-40 md:w-40 text-[#D4AF37] opacity-50" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Tech Stack Grid */}
-      <section className="py-40 border-y border-white/5">
+      <section className="py-20 md:py-40 border-y border-white/5">
         <div className="container px-6 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {technologies.map((tech, i) => (
-              <div key={i} className="bg-white/[0.03] p-12 space-y-12 border border-white/10 rounded-[2rem] hover:bg-white/[0.05] transition-all group">
+              <div key={i} className="bg-white/[0.03] p-8 md:p-12 space-y-12 border border-white/10 rounded-[2rem] hover:bg-white/[0.05] transition-all group">
                 <div className="text-[#D4AF37]">{tech.icon}</div>
                 <div className="space-y-6">
                   <h3 className="text-2xl font-serif">{tech.title}</h3>

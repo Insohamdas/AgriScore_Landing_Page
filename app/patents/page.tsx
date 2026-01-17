@@ -1,11 +1,22 @@
 "use client"
 
+import { useState, useEffect } from "react"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import * as Lucide from "lucide-react"
 
 export default function Patents() {
+  const [currentDate, setCurrentDate] = useState("January 15, 2026")
+
+  useEffect(() => {
+    setCurrentDate(new Date().toLocaleDateString('en-US', {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric'
+    }))
+  }, [])
+
   const { 
     Cpu, 
     Shield, 
@@ -30,7 +41,7 @@ export default function Patents() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-[100px] -mr-64 -mb-64" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-48 pb-32 relative">
+      <div className="max-w-5xl mx-auto px-6 pt-32 md:pt-48 pb-20 md:pb-32 relative">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -41,7 +52,7 @@ export default function Patents() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/40 font-bold block">Intellectual Property</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
+          <h1 className="text-5xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
             Patent <span className="not-italic text-white/90">Portfolio</span>
           </h1>
           
@@ -94,12 +105,12 @@ export default function Patents() {
                     Status Report: Current Portfolio
                   </p>
                   
-                  <div className="relative group overflow-hidden p-12 rounded-[2rem] border border-white/10 bg-white/[0.02] flex flex-col items-center justify-center text-center">
+                  <div className="relative group overflow-hidden p-8 md:p-12 rounded-[2rem] border border-white/10 bg-white/[0.02] flex flex-col items-center justify-center text-center">
                      <div className="absolute inset-0 bg-radial-gradient from-white/[0.03] to-transparent opacity-50" />
                      {PendingIcon && <PendingIcon className="w-12 h-12 text-white/10 mb-6 animate-pulse" />}
                      <h3 className="text-xl text-white font-serif italic mb-4">No Active Patents</h3>
                      <p className="text-sm text-white/40 max-w-md leading-relaxed">
-                        As of <span className="text-white">January 15, 2026</span>, Agriscore Private Limited does not hold any active patent registrations. 
+                        As of <span className="text-white">{currentDate}</span>, Agriscore Private Limited does not hold any active patent registrations. 
                         We are currently in the research and development phase of several proprietary technologies.
                      </p>
                   </div>

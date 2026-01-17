@@ -99,7 +99,7 @@ export function HeroSection() {
           transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
           className="text-center space-y-12"
         >
-          <h1 className="text-[clamp(3rem,8vw,8rem)] font-serif font-light text-white leading-[1.05] tracking-tight">
+          <h1 className="text-[clamp(2.5rem,8vw,8rem)] font-serif font-light text-white leading-[1.05] tracking-tight text-balance">
             Engineering a <br />
             <span className="italic">Pesticide-Free</span> India
           </h1>

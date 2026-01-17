@@ -25,16 +25,16 @@ export function MarketsSection() {
   return (
     <section className="py-40 bg-black text-white px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-end">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 md:mb-32 items-end">
           <div className="space-y-6">
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/20 font-bold mb-4 block">Agricultural Resilience</span>
-            <h2 className="text-5xl md:text-8xl font-serif font-light leading-[1.1] tracking-tighter">
+            <h2 className="text-4xl md:text-8xl font-serif font-light leading-[1.1] tracking-tighter">
               Precision <span className="italic text-white/40">Impact</span> <br />
               <span className="text-white/20 font-sans uppercase text-sm tracking-[0.4em] font-bold not-italic">On Indian Soil</span>
             </h2>
           </div>
           <div className="md:text-right">
-            <p className="text-2xl md:text-4xl font-serif italic text-white/40 leading-[1.3] tracking-tight max-w-lg ml-auto">
+            <p className="text-xl md:text-4xl font-serif italic text-white/40 leading-[1.3] tracking-tight max-w-lg md:ml-auto">
               We deliver strategic solutions to increase farmer profitability and secure a pesticide-free future for India.
             </p>
           </div>
@@ -45,7 +45,7 @@ export function MarketsSection() {
             <motion.div 
               key={i} 
               whileHover="hover"
-              className="relative aspect-[3/4] overflow-hidden group rounded-[3rem] border border-white/5"
+              className="relative aspect-[3/4] overflow-hidden group rounded-[2rem] md:rounded-[3rem] border border-white/5"
             >
               <motion.img 
                 variants={{
@@ -56,10 +56,10 @@ export function MarketsSection() {
                 alt={market.title}
                 className="absolute inset-0 w-full h-full object-cover transition-all duration-700 grayscale group-hover:grayscale-0 opacity-40 group-hover:opacity-100"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-10 space-y-4">
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent flex flex-col justify-end p-8 md:p-10 space-y-4">
                 <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/50">{market.category}</span>
                 <div className="flex justify-between items-end">
-                  <h3 className="text-3xl font-serif font-light">{market.title}</h3>
+                  <h3 className="text-2xl md:text-3xl font-serif font-light">{market.title}</h3>
                   <div className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-500">
                     <ArrowRight className="h-5 w-5 -rotate-45" />
                   </div>

@@ -29,7 +29,7 @@ export function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6">
-        <div className={`flex justify-between items-center px-10 h-20 rounded-full border border-white/10 transition-all duration-700 ${
+        <div className={`flex justify-between items-center px-6 md:px-10 h-20 rounded-full border border-white/10 transition-all duration-700 ${
           scrolled ? "bg-black/90 backdrop-blur-2xl shadow-2xl scale-[0.98]" : "bg-white/[0.03] backdrop-blur-md shadow-none"
         }`}>
           {/* Logo */}
@@ -37,7 +37,7 @@ export function Navbar() {
             <img 
               src="/logo.png" 
               alt="Logo" 
-              className="h-12 w-auto object-contain transition-opacity"
+              className="h-8 md:h-12 w-auto object-contain transition-opacity"
             />
           </Link>
 

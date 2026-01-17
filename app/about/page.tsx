@@ -35,7 +35,7 @@ export default function AboutPage() {
             className="space-y-6"
           >
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/40 font-bold">The Heart of Indian Agriculture</span>
-            <h1 className="text-6xl md:text-9xl font-serif font-light text-white leading-tight">
+            <h1 className="text-5xl md:text-9xl font-serif font-light text-white leading-tight">
               Our <span className="italic">Mission</span>
             </h1>
           </motion.div>
@@ -51,8 +51,8 @@ export default function AboutPage() {
       </section>
 
       {/* The Narrative Part 1: The Soil Restoration */}
-      <section className="py-40 px-6">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
+      <section className="py-20 md:py-40 px-6">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-24 items-center">
           <motion.div 
              initial={{ opacity: 0, x: -50 }}
              whileInView={{ opacity: 1, x: 0 }}
@@ -61,8 +61,8 @@ export default function AboutPage() {
              className="space-y-10"
           >
             <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#D4AF37]">Chapter I: Soil Sovereignty</span>
-            <h2 className="text-5xl md:text-7xl font-serif font-light leading-[1.1]">Restoring <br /><span className="italic">Mother Earth</span></h2>
-            <p className="text-xl text-[#1A3C34]/60 font-light leading-relaxed max-w-lg">
+            <h2 className="text-4xl md:text-7xl font-serif font-light leading-[1.1]">Restoring <br /><span className="italic">Mother Earth</span></h2>
+            <p className="text-lg md:text-xl text-[#1A3C34]/60 font-light leading-relaxed max-w-lg">
               Across the vast plains of India, our soil is tired. We are on a mission to save the land by eliminating chemical dependency and restoring biological vitality—ensuring every acre thrives for generations.
             </p>
             <div className="flex items-center space-x-6 pt-4">

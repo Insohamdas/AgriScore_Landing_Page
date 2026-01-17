@@ -30,7 +30,7 @@ export default function HomePage() {
                 By focusing on soil health and reducing the burden of chemical costs, we are helping Indian farmers reclaim their land and their livelihood.
               </p>
             </div>
-            <div className="flex gap-8 border-l border-neutral-100 pl-12">
+            <div className="flex gap-8 border-l-0 md:border-l border-neutral-100 pl-0 md:pl-12 justify-center md:justify-start w-full md:w-auto mt-8 md:mt-0">
                <div className="text-center">
                   <span className="block text-3xl font-serif text-neutral-900 italic">100%</span>
                   <span className="text-[10px] uppercase tracking-widest text-neutral-400">Pesticide Free</span>

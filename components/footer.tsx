@@ -35,7 +35,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           
           <div className="md:col-span-5 space-y-8">
-            <img src="/logo.png" alt="Logo" className="h-20 w-auto object-contain opacity-80" />
+            <img src="/logo.png" alt="Logo" className="h-12 md:h-20 w-auto object-contain opacity-80" />
             <p className="text-xl text-white/40 font-light leading-relaxed max-w-sm">
               We define the global standard in precision agriculture. Headquartered in Kolkata, blending advanced technology with the nation’s rich agricultural heritage.
             </p>

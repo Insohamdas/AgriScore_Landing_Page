@@ -12,7 +12,7 @@ export function FeaturesSection() {
              <div className="inline-flex items-center px-4 py-2 rounded-full border border-neutral-200 text-[10px] uppercase tracking-[0.4em] font-bold text-neutral-500">
                 Core Capabilities
              </div>
-             <h2 className="text-5xl md:text-8xl font-serif font-light text-neutral-900 leading-tight">
+             <h2 className="text-4xl md:text-8xl font-serif font-light text-neutral-900 leading-tight">
                 Architecting the <br />
                 <span className="italic">Future of Growth</span>
              </h2>
@@ -22,14 +22,14 @@ export function FeaturesSection() {
           {/* Main Bento Item */}
           <motion.div 
             whileHover={{ y: -5 }}
-            className="md:col-span-3 md:row-span-2 bg-[#F9F9F7] rounded-[3rem] p-12 flex flex-col justify-between overflow-hidden relative group border border-neutral-100 shadow-xl"
+            className="md:col-span-3 md:row-span-2 bg-[#F9F9F7] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between overflow-hidden relative group border border-neutral-100 shadow-xl"
           >
              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
              <div className="space-y-6 relative z-10">
                 <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center shadow-sm">
                     <Menu className="h-8 w-8 text-neutral-800" />
                 </div>
-                <h3 className="text-4xl font-serif font-light text-neutral-900 leading-tight">Soil <br /> Restoration</h3>
+                <h3 className="text-3xl md:text-4xl font-serif font-light text-neutral-900 leading-tight">Soil <br /> Restoration</h3>
                 <p className="text-lg text-neutral-500 font-light leading-relaxed max-w-sm">
                     Saving India's land by detoxifying soil and eliminating the invisible chain of chemical fertilizers.
                 </p>
@@ -50,7 +50,7 @@ export function FeaturesSection() {
           {/* Secondary Bento Items */}
           <motion.div 
             whileHover={{ y: -5 }}
-            className="md:col-span-3 bg-neutral-900 rounded-[3rem] p-12 flex flex-col justify-between group cursor-pointer overflow-hidden relative shadow-2xl"
+            className="md:col-span-3 bg-neutral-900 rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between group cursor-pointer overflow-hidden relative shadow-2xl"
           >
              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
              <div className="space-y-6 relative z-10">
@@ -69,7 +69,7 @@ export function FeaturesSection() {
 
           <motion.div 
             whileHover={{ y: -5 }}
-            className="md:col-span-3 bg-[#E5E5E1] rounded-[3rem] p-12 flex flex-col justify-between group border border-neutral-200 shadow-xl"
+            className="md:col-span-3 bg-[#E5E5E1] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between group border border-neutral-200 shadow-xl"
           >
              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
              <div className="space-y-6">

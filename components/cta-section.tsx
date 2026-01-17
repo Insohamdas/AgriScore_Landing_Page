@@ -31,12 +31,12 @@ export function CTASection() {
              <span className="text-[10px] uppercase tracking-[0.5em] text-white/60 font-bold">National Deployment 2026</span>
           </div>
 
-          <h2 className="text-6xl md:text-9xl font-serif font-light text-white leading-[1.1] tracking-tight">
+          <h2 className="text-5xl md:text-9xl font-serif font-light text-white leading-[1.1] tracking-tight">
             Design the <br />
             <span className="italic">Future of Food</span>
           </h2>
           
-          <p className="text-xl md:text-2xl text-white/40 max-w-2xl mx-auto font-light leading-relaxed">
+          <p className="text-lg md:text-2xl text-white/40 max-w-2xl mx-auto font-light leading-relaxed">
             We are selecting a community of visionaries to restore the purity of Indian soil. Secure your legacy in the next generation of agriculture.
           </p>
         </motion.div>
@@ -49,7 +49,7 @@ export function CTASection() {
            className="flex flex-col items-center gap-10"
         >
           <Link href="/contact" className="group/cta">
-            <Button size="lg" className="relative overflow-hidden rounded-full bg-[#D4AF37] text-[#1A3C34] hover:bg-white h-24 px-20 text-[14px] uppercase tracking-[0.3em] font-bold shadow-[0_20px_60px_rgba(212,175,55,0.3)] transition-all hover:scale-105 active:scale-95 group border-none">
+            <Button size="lg" className="relative overflow-hidden rounded-full bg-[#D4AF37] text-[#1A3C34] hover:bg-white h-20 md:h-24 px-12 md:px-20 text-[12px] md:text-[14px] uppercase tracking-[0.3em] font-bold shadow-[0_20px_60px_rgba(212,175,55,0.3)] transition-all hover:scale-105 active:scale-95 group border-none">
               <span className="relative z-10">Join the Mission</span>
               <motion.div 
                  className="absolute inset-0 bg-white/40 opacity-0 group-hover/cta:opacity-100 transition-opacity"
@@ -60,19 +60,19 @@ export function CTASection() {
             </Button>
           </Link>
 
-          <div className="flex items-center gap-12 opacity-30 group-hover:opacity-100 transition-all duration-1000">
+          <div className="flex items-center gap-6 md:gap-12 opacity-30 group-hover:opacity-100 transition-all duration-1000">
              <div className="flex flex-col items-center gap-2">
-                <span className="text-2xl font-serif text-white">0%</span>
+                <span className="text-xl md:text-2xl font-serif text-white">0%</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">Toxins</span>
              </div>
              <div className="w-[1px] h-12 bg-white/20" />
              <div className="flex flex-col items-center gap-2">
-                <span className="text-2xl font-serif text-white">100%</span>
+                <span className="text-xl md:text-2xl font-serif text-white">100%</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">Restored</span>
              </div>
              <div className="w-[1px] h-12 bg-white/20" />
              <div className="flex flex-col items-center gap-2">
-                <span className="text-2xl font-serif text-white">2026</span>
+                <span className="text-xl md:text-2xl font-serif text-white">2026</span>
                 <span className="text-[9px] uppercase tracking-widest font-bold">Cycle</span>
              </div>
           </div>
