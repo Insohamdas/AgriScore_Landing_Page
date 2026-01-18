@@ -122,7 +122,7 @@ export function Navbar() {
               className="mt-auto space-y-4 pb-10"
             >
               <Link href="/signin" onClick={() => setIsOpen(false)} className="block w-full">
-                <Button variant="outline" className="w-full h-16 rounded-full border-white/10 text-white text-[14px] uppercase tracking-[0.3em] font-bold">
+                <Button className="w-full h-16 rounded-full border border-white/20 bg-transparent text-white text-[14px] uppercase tracking-[0.3em] font-bold hover:bg-white/10">
                   Sign In
                 </Button>
               </Link>
