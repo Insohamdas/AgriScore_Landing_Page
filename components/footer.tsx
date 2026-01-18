@@ -30,33 +30,36 @@ export function Footer() {
   }
 
   return (
-    <footer className="bg-black text-white py-20 px-6 border-t border-white/5">
+    <footer className="bg-black text-white py-16 md:py-24 px-6 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12">
           
-          <div className="md:col-span-5 space-y-8">
-            <img src="/logo.png" alt="Logo" className="h-12 md:h-20 w-auto object-contain opacity-80" />
-            <p className="text-xl text-white/40 font-light leading-relaxed max-w-sm">
-              We define the global standard in precision agriculture. Headquartered in Kolkata, blending advanced technology with the nation’s rich agricultural heritage.
-            </p>
-            <div className="space-y-4">
-              <span className="block text-[10px] uppercase tracking-[0.4em] text-white/30">Join the Mission</span>
+          <div className="lg:col-span-5 space-y-8 md:space-y-12">
+            <div className="space-y-6">
+              <img src="/logo.png" alt="Logo" className="h-10 md:h-20 w-auto object-contain opacity-90 mx-auto md:mx-0" />
+              <p className="text-lg md:text-xl text-white/40 font-light leading-relaxed max-w-sm mx-auto md:mx-0 text-center md:text-left">
+                We define the global standard in precision agriculture. Headquartered in Kolkata, blending advanced technology with the nation’s rich agricultural heritage.
+              </p>
+            </div>
+
+            <div className="space-y-6 max-w-md mx-auto md:mx-0">
+              <span className="block text-[10px] uppercase tracking-[0.4em] text-white/30 text-center md:text-left font-bold">Join the Mission</span>
               <div className="flex border-b border-white/20 pb-4 group hover:border-white transition-colors">
                 <input 
                   type="email" 
                   placeholder="Enter your email address" 
-                  className="bg-transparent border-none outline-none text-sm w-full placeholder:text-white/20"
+                  className="bg-transparent border-none outline-none text-sm w-full placeholder:text-white/20 py-2"
                 />
-                <button className="text-xs uppercase tracking-[0.2em] font-bold text-white/50 hover:text-white transition-colors">Join</button>
+                <button className="text-xs uppercase tracking-[0.2em] font-bold text-[#D4AF37] hover:text-white transition-colors">Join</button>
               </div>
             </div>
           </div>
 
-          <div className="md:col-span-7 grid grid-cols-2 md:grid-cols-3 gap-12">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12 md:gap-8">
              {Object.entries(links).map(([title, items]) => (
-                <div key={title} className="space-y-8">
-                   <h4 className="text-[12px] uppercase tracking-[0.4em] text-white/40 font-semibold">{title}</h4>
-                   <ul className="space-y-4">
+                <div key={title} className="space-y-6 md:space-y-8 text-center sm:text-left">
+                   <h4 className="text-[11px] md:text-[12px] uppercase tracking-[0.4em] text-white/40 font-bold">{title}</h4>
+                   <ul className="space-y-3 md:space-y-4">
                       {items.map(item => {
                         let href = "#";
                         if (item === "Privacy Notice") href = "/privacy-notice";
@@ -72,9 +75,9 @@ export function Footer() {
                         
                         return (
                           <li key={item}>
-                             <Link href={href} className="relative text-sm font-light text-white/60 hover:text-white transition-colors tracking-wide group/link">
+                             <Link href={href} className="relative text-base sm:text-sm font-light text-white/60 hover:text-white transition-colors tracking-wide group/link inline-block">
                                 {item}
-                                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white/40 group-hover/link:w-full transition-all duration-500" />
+                                <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#D4AF37] group-hover/link:w-full transition-all duration-500" />
                              </Link>
                           </li>
                         )
@@ -86,26 +89,26 @@ export function Footer() {
 
         </div>
 
-        <div className="mt-20 pt-10 border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-8 items-center opacity-20 hover:opacity-100 transition-opacity duration-700">
-           <div className="text-[10px] uppercase tracking-[0.5em] font-light text-center md:text-left">
-              © 2026 AgriScore Private Limited. All Rights Reserved.
+        <div className="mt-16 md:mt-24 pt-10 border-t border-white/5 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+           <div className="text-[9px] md:text-[10px] uppercase tracking-[0.4em] md:tracking-[0.5em] font-light text-center md:text-left text-white/30 leading-relaxed">
+              © 2026 AgriScore Private Limited. <br className="md:hidden" /> All Rights Reserved.
            </div>
 
-           <div className="flex justify-center md:justify-end gap-x-8">
-              <Link href="https://www.instagram.com/agriscore.official?igsh=MW5uM2dkanQ0MGZiaA==" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors" title="Instagram">
-                <Instagram className="h-4 w-4" />
+           <div className="flex justify-center md:justify-end gap-x-10 md:gap-x-8">
+              <Link href="https://www.instagram.com/agriscore.official?igsh=MW5uM2dkanQ0MGZiaA==" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#D4AF37] transition-colors p-2" title="Instagram">
+                <Instagram className="h-5 w-5 md:h-4 md:w-4" />
               </Link>
-              <Link href="https://x.com/AgriScore" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors" title="X (Twitter)">
-                <XIcon className="h-4 w-4" />
+              <Link href="https://x.com/AgriScore" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#D4AF37] transition-colors p-2" title="X (Twitter)">
+                <XIcon className="h-5 w-5 md:h-4 md:w-4" />
               </Link>
-              <Link href="https://www.linkedin.com/company/myagriscore/" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors" title="LinkedIn">
-                <Linkedin className="h-4 w-4" />
+              <Link href="https://www.linkedin.com/company/myagriscore/" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#D4AF37] transition-colors p-2" title="LinkedIn">
+                <Linkedin className="h-5 w-5 md:h-4 md:w-4" />
               </Link>
-              <Link href="https://www.whatsapp.com/channel/0029VbC5yhMGE56kIAeyBi3K" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors" title="WhatsApp">
-                <WhatsAppIcon className="h-4 w-4" />
+              <Link href="https://www.whatsapp.com/channel/0029VbC5yhMGE56kIAeyBi3K" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#D4AF37] transition-colors p-2" title="WhatsApp">
+                <WhatsAppIcon className="h-5 w-5 md:h-4 md:w-4" />
               </Link>
-              <Link href="https://www.youtube.com/channel/UCx_GxBEKWy9ZT_-gXpZ1k5w" target="_blank" rel="noopener noreferrer" className="hover:text-[#D4AF37] transition-colors" title="YouTube">
-                <Youtube className="h-4 w-4" />
+              <Link href="https://www.youtube.com/channel/UCx_GxBEKWy9ZT_-gXpZ1k5w" target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-[#D4AF37] transition-colors p-2" title="YouTube">
+                <Youtube className="h-5 w-5 md:h-4 md:w-4" />
               </Link>
            </div>
         </div>
