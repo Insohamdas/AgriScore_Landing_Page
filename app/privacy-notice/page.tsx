@@ -262,21 +262,21 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="13" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-4 md:gap-6">
+                <div className="flex flex-col sm:flex-row items-start gap-4 md:gap-6">
                    <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">13</span>
-                   <div className="space-y-8">
+                   <div className="space-y-8 w-full">
                     <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Contact <span className="not-italic">DPO</span></h2>
-                    <p>For questions or comments about this notice, you may contact our Data Protection Officer by email:</p>
+                    <p className="text-sm md:text-base">For questions or comments about this notice, you may contact our Data Protection Officer by email:</p>
                     <a 
                       href="mailto:myagriscore.official@gmail.com" 
-                      className="group/mail inline-flex items-center gap-4 p-8 rounded-3xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-500 w-full"
+                      className="group/mail flex flex-col sm:flex-row items-center sm:items-start md:items-center gap-6 p-6 md:p-10 rounded-3xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-500 w-full overflow-hidden"
                     >
-                      <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover/mail:scale-110 transition-transform duration-500">
+                      <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover/mail:scale-110 transition-transform duration-500 shrink-0">
                         {MessageSquare && <MessageSquare className="w-5 h-5 text-white/60" />}
                       </div>
-                      <div>
+                      <div className="text-center sm:text-left w-full overflow-hidden">
                         <p className="text-xs text-white/40 uppercase tracking-widest font-bold mb-1">Send an Enquiry</p>
-                        <p className="text-xl md:text-2xl text-white font-serif italic">myagriscore.official@gmail.com</p>
+                        <p className="text-lg sm:text-xl md:text-2xl text-white font-serif italic break-all sm:break-normal">myagriscore.official@gmail.com</p>
                       </div>
                     </a>
                    </div>
