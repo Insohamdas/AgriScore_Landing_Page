@@ -28,7 +28,7 @@ export default function ExperiencePage() {
       <Navbar />
 
       {/* 1. Territory Command (HUD Hero) */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-40 md:pt-20">
         {/* Cinematic Drone Background */}
         <div className="absolute inset-0 z-0 scale-110">
           <img 
@@ -46,11 +46,11 @@ export default function ExperiencePage() {
                 initial={{ opacity: 0, x: -40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
-                className="lg:col-span-7 space-y-8 text-center lg:text-left"
+                className="lg:col-span-7 space-y-6 md:space-y-8 text-center lg:text-left"
               >
-                 <h1 className="text-[clamp(3.5rem,10vw,8rem)] font-serif font-light leading-[1.1] tracking-tight">
-                    Territory <br className="hidden md:block" />
-                    <span className="italic">Intelligence</span>
+                 <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-[clamp(5rem,10vw,8rem)] font-serif font-light leading-[1.1] tracking-tight px-2 md:px-0">
+                    Territory <br className="md:block" />
+                    <span className="italic text-[#D4AF37]">Intelligence</span>
                  </h1>
                  
                  <p className="text-lg md:text-xl text-white/40 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
@@ -117,15 +117,16 @@ export default function ExperiencePage() {
             {/* Large Feature Card */}
             <motion.div 
               whileHover={{ y: -10 }}
-              className="md:col-span-2 relative aspect-video md:aspect-auto h-[450px] md:h-[600px] bg-white/5 border border-white/10 rounded-3xl md:rounded-sm overflow-hidden group p-8 md:p-12 flex flex-col justify-end"
+              className="md:col-span-2 relative h-[350px] sm:h-[450px] md:h-[600px] bg-white/5 border border-white/10 rounded-3xl md:rounded-sm overflow-hidden group p-8 md:p-12 flex flex-col justify-end"
             >
-               <div className="absolute inset-0 opacity-20">
+               <div className="absolute inset-0 opacity-30 md:opacity-20">
                   <img src="https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=2671&auto=format&fit=crop" alt="Soil Detail" className="w-full h-full object-cover grayscale transition-transform duration-1000 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                </div>
                <div className="relative z-10 space-y-4 md:space-y-6">
                   <Cpu className="h-10 w-10 md:h-12 md:w-12 text-[#D4AF37]" />
-                  <h3 className="text-3xl md:text-4xl font-serif font-light">Sub-Surface Intelligence</h3>
-                  <p className="text-sm md:text-base text-white/40 max-w-md font-light">Our nano-sensors operate 2 meters below the surface, capturing the chemical dialogue of your crops before they even emerge.</p>
+                  <h3 className="text-2xl md:text-4xl font-serif font-light">Sub-Surface Intelligence</h3>
+                  <p className="text-sm md:text-base text-white/40 max-w-sm md:max-w-md font-light leading-relaxed">Our nano-sensors operate 2 meters below the surface, capturing the chemical dialogue of your crops before they even emerge.</p>
                </div>
             </motion.div>
 
