@@ -32,7 +32,7 @@ export default function ExperiencePage() {
         {/* Cinematic Drone Background */}
         <div className="absolute inset-0 z-0 scale-110">
           <img 
-            src="https://images.unsplash.com/photo-1500382017468-9049fee74a62?q=80&w=2600&auto=format&fit=crop" 
+            src="/indian-pattern.png" 
             alt="Aerial Estate" 
             className="w-full h-full object-cover opacity-40 grayscale"
           />

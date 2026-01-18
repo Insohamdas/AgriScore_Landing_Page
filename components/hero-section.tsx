@@ -200,7 +200,7 @@ export function HeroSection() {
           muted 
           playsInline
           className="w-full h-full object-cover opacity-50"
-          poster="https://images.unsplash.com/photo-1500382017468-9049fee74a62?q=80&w=2000&auto=format&fit=crop"
+          poster="/abstract-geometric-pattern.png"
         >
            <source src="https://player.vimeo.com/external/494254245.hd.mp4?s=d63a89e90956903f69cf327c5f87b326002f254e&profile_id=175" type="video/mp4" />
         </video>

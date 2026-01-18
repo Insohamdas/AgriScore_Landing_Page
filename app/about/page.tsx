@@ -20,7 +20,7 @@ export default function AboutPage() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="https://images.unsplash.com/photo-1500382017468-9049fee74a62?q=80&w=2600&auto=format&fit=crop" 
+            src="/abstract-geometric-pattern.png" 
             alt="Soil Texture" 
             className="w-full h-full object-cover opacity-60 grayscale-[0.2]"
           />
