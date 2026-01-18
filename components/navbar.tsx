@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Menu, X, ArrowRight } from "lucide-react"
+import { Menu, X, ArrowRight, ArrowUpRight } from "lucide-react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,7 +38,7 @@ export function Navbar() {
             <img 
               src="/logo.png" 
               alt="Logo" 
-              className="h-8 md:h-12 w-auto object-contain transition-opacity"
+              className="h-10 md:h-12 w-auto object-contain transition-opacity"
             />
           </Link>
 
@@ -78,26 +79,62 @@ export function Navbar() {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="fixed inset-0 z-40 bg-black flex flex-col items-center justify-center space-y-8 md:hidden">
-          <div className="mb-10">
-            <img src="/logo.png" alt="Logo" className="h-12 w-auto object-contain" />
-          </div>
-          {navigation.map((item) => (
-            <Link
-              key={item.name}
-              href={item.href}
-              className="text-4xl font-serif font-light text-white"
-              onClick={() => setIsOpen(false)}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ opacity: 0, scale: 1.1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+            className="fixed inset-0 z-[100] bg-black md:hidden flex flex-col p-6"
+          >
+            <div className="flex justify-between items-center h-20">
+               <img src="/logo.png" alt="Logo" className="h-10 w-auto object-contain" />
+               <button onClick={() => setIsOpen(false)} className="w-12 h-12 flex items-center justify-center rounded-full bg-white/5 text-white">
+                 <X className="h-6 w-6" />
+               </button>
+            </div>
+
+            <div className="flex-1 flex flex-col justify-center space-y-6">
+              {navigation.map((item, i) => (
+                <motion.div
+                  key={item.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.1 + 0.2 }}
+                >
+                  <Link
+                    href={item.href}
+                    className="group flex items-center justify-between py-4 border-b border-white/5"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <span className="text-4xl font-serif font-light text-white tracking-tight">{item.name}</span>
+                    <ArrowUpRight className="h-6 w-6 text-white/20 group-hover:text-white transition-colors" />
+                  </Link>
+                </motion.div>
+              ))}
+            </div>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6 }}
+              className="mt-auto space-y-4 pb-10"
             >
-              {item.name}
-            </Link>
-          ))}
-          <Button onClick={() => setIsOpen(false)} variant="outline" className="mt-8 border-white/20 text-white hover:bg-white/10 rounded-full px-12 py-6">
-            Close Menu
-          </Button>
-        </div>
-      )}
+              <Link href="/signin" onClick={() => setIsOpen(false)} className="block w-full">
+                <Button variant="outline" className="w-full h-16 rounded-full border-white/10 text-white text-[14px] uppercase tracking-[0.3em] font-bold">
+                  Sign In
+                </Button>
+              </Link>
+              <Link href="/experience" onClick={() => setIsOpen(false)} className="block w-full">
+                <Button className="w-full h-16 rounded-full bg-white text-black text-[14px] uppercase tracking-[0.3em] font-bold">
+                  Experience
+                </Button>
+              </Link>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   )
 }

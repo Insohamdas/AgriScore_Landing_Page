@@ -21,6 +21,10 @@ export function FeaturesSection() {
         <div className="grid grid-cols-1 md:grid-cols-6 md:grid-rows-2 gap-6 h-auto md:h-[900px]">
           {/* Main Bento Item */}
           <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
             whileHover={{ y: -5 }}
             className="md:col-span-3 md:row-span-2 bg-[#F9F9F7] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between overflow-hidden relative group border border-neutral-100 shadow-xl"
           >
@@ -49,6 +53,10 @@ export function FeaturesSection() {
 
           {/* Secondary Bento Items */}
           <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             whileHover={{ y: -5 }}
             className="md:col-span-3 bg-neutral-900 rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between group cursor-pointer overflow-hidden relative shadow-2xl"
           >
@@ -68,6 +76,10 @@ export function FeaturesSection() {
           </motion.div>
 
           <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             whileHover={{ y: -5 }}
             className="md:col-span-3 bg-[#E5E5E1] rounded-[2.5rem] md:rounded-[3rem] p-8 md:p-12 flex flex-col justify-between group border border-neutral-200 shadow-xl"
           >

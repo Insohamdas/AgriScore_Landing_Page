@@ -76,16 +76,17 @@ export default function ExperiencePage() {
               {/* HUD Visualization Ring */}
               <motion.div 
                 initial={{ opacity: 0, scale: 0.8, rotate: -20 }}
-                animate={{ opacity: 1, scale: 1, rotate: 0 }}
+                whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
+                viewport={{ once: true }}
                 transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
-                className="lg:col-span-5 hidden lg:flex justify-center"
+                className="lg:col-span-5 flex justify-center mt-12 lg:mt-0"
               >
-                 <div className="relative w-96 h-96 flex items-center justify-center">
+                 <div className="relative w-64 h-64 md:w-96 md:h-96 flex items-center justify-center scale-75 md:scale-100">
                     <div className="absolute inset-0 border-[0.5px] border-white/10 rounded-full animate-spin-slow" />
                     <div className="absolute inset-4 border-[0.5px] border-emerald-500/20 rounded-full animate-reverse-spin" />
                     <div className="absolute inset-10 border-[1px] border-dashed border-white/5 rounded-full" />
                     <div className="relative z-10 flex flex-col items-center space-y-2">
-                       <Activity className="h-10 w-10 text-[#D4AF37]" />
+                       <Activity className="h-8 w-8 md:h-10 md:w-10 text-[#D4AF37]" />
                        <span className="text-[9px] uppercase tracking-[0.5em] font-bold opacity-40">Neural Sync</span>
                     </div>
                  </div>
