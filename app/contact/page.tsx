@@ -33,8 +33,7 @@ export default function ContactPage() {
           >
             <span className="text-[10px] uppercase tracking-[0.6em] text-[#D4AF37] font-bold">The AgriScore Entrance</span>
             <h1 className="text-6xl md:text-9xl font-serif font-light leading-tight">
-              Contact <br />
-              <span className="italic">Us</span>
+              Contact <span className="italic">Us</span>
             </h1>
             <p className="text-xl text-white/40 max-w-2xl font-light leading-relaxed">
               We operate at the intersection of biological heritage and computational intelligence. Access to the AgriScore ecosystem is selective, ensuring the integrity of our global network.

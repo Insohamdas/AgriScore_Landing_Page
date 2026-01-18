@@ -20,11 +20,11 @@ export default function AboutPage() {
           className="absolute inset-0 z-0"
         >
           <img 
-            src="/abstract-geometric-pattern.png" 
+            src="https://images.unsplash.com/photo-1600150806237-a7dffed6b53c?q=80&w=2531&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="Soil Texture" 
-            className="w-full h-full object-cover opacity-60 grayscale-[0.2]"
+            className="w-full h-full object-cover opacity-70 grayscale"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-[#FAF9F6]" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black via-black/50 to-[#FAF9F6]" />
         </motion.div>
 
         <div className="max-w-7xl mx-auto relative z-10 px-6 text-center">
@@ -34,9 +34,9 @@ export default function AboutPage() {
             transition={{ delay: 0.5, duration: 1.5 }}
             className="space-y-6"
           >
-            <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 font-bold block mb-4 md:mb-0">The Heart of Indian Agriculture</span>
-            <h1 className="text-[clamp(3.5rem,12vw,9rem)] font-serif font-light text-white leading-[1.1] tracking-tight">
-              About <br /><span className="italic text-white/60">AgriScore</span>
+            <span className="text-[10px] uppercase tracking-[0.4em] text-white/60 font-bold block mb-4 md:mb-0 drop-shadow-lg">The Heart of Indian Agriculture</span>
+            <h1 className="text-[clamp(3.5rem,12vw,9rem)] font-serif font-light text-white leading-[1.1] tracking-tight drop-shadow-2xl">
+              Our <span className="italic text-[#D4AF37]">Mission</span>
             </h1>
           </motion.div>
         </div>

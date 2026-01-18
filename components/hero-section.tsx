@@ -210,7 +210,6 @@ export function HeroSection() {
           className="text-center space-y-12"
         >
           <h1 className="text-[clamp(2.5rem,8vw,8rem)] font-serif font-light text-white leading-[1.05] tracking-tight text-balance">
-            AgriScore – <br />
             Engineering a <span className="italic">Pesticide-Free</span> India
           </h1>
 
