@@ -192,20 +192,14 @@ export function HeroSection() {
         transition={{ type: "spring", stiffness: 150, damping: 20, mass: 0.1 }}
       />
 
-      {/* Dynamic Cinematic Background */}
-      <motion.div style={{ y }} className="absolute inset-0 z-0 scale-110 grayscale-[0.3]">
-        <video 
-          autoPlay 
-          loop 
-          muted 
-          playsInline
-          className="w-full h-full object-cover opacity-50"
-          poster="/abstract-geometric-pattern.png"
-        >
-           <source src="https://player.vimeo.com/external/494254245.hd.mp4?s=d63a89e90956903f69cf327c5f87b326002f254e&profile_id=175" type="video/mp4" />
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black" />
-      </motion.div>
+      {/* Top Portion Background Texture */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-20">
+        <img 
+          src="https://images.unsplash.com/photo-1627920769541-daa658ed6b59?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt="Top Background" 
+          className="w-full h-full object-cover grayscale"
+        />
+      </div>
 
       <div className="container relative z-10 px-4 flex flex-col items-center justify-center h-full">
         <motion.div 
@@ -216,8 +210,8 @@ export function HeroSection() {
           className="text-center space-y-12"
         >
           <h1 className="text-[clamp(2.5rem,8vw,8rem)] font-serif font-light text-white leading-[1.05] tracking-tight text-balance">
-            Engineering a <br />
-            <span className="italic">Pesticide-Free</span> India
+            AgriScore – <br />
+            Engineering a <span className="italic">Pesticide-Free</span> India
           </h1>
 
           <p className="text-lg md:text-2xl text-white/40 max-w-3xl mx-auto font-light leading-relaxed tracking-tight">

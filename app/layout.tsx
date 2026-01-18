@@ -17,10 +17,10 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   title: {
-    default: "AgriScore | Precision Agriculture & Soil Intelligence",
+    default: "AgriScore – Precision Agriculture & Soil Intelligence Platform",
     template: "%s | AgriScore"
   },
-  description: "The global standard in precision agriculture. We combine advanced soil intelligence with AI-driven insights to help estate owners and farmers achieve sustainable, high-yield results.",
+  description: "AgriScore is a precision agriculture platform offering soil intelligence, sustainable farming solutions, and high-yield crop optimization for Indian farmers.",
   keywords: ["precision agriculture India", "soil intelligence", "smart farming solutions", "agritech Kolkata", "sustainable farming", "yield engineering"],
   authors: [{ name: "AgriScore" }],
   creator: "AgriScore",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://myagriscore.com",
-    title: "AgriScore | Precision Agriculture & Soil Intelligence",
+    title: "AgriScore – Precision Agriculture & Soil Intelligence Platform",
     description: "Engineering the future of farming with advanced soil intelligence and AI-driven precision agriculture.",
     siteName: "AgriScore",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AgriScore | Precision Agriculture",
+    title: "AgriScore – Precision Agriculture",
     description: "Engineering the future of farming with advanced soil intelligence.",
     images: ["/logo.png"],
   },
@@ -74,8 +74,33 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AgriScore",
+    "url": "https://myagriscore.com",
+    "logo": "https://myagriscore.com/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/company/myagriscore/",
+      "https://www.instagram.com/agriscore.official",
+      "https://x.com/AgriScore",
+      "https://www.youtube.com/channel/UCx_GxBEKWy9ZT_-gXpZ1k5w"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "myagriscore.official@gmail.com",
+      "contactType": "customer service"
+    }
+  }
+
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable} antialiased`}>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body className="font-sans bg-black text-white selection:bg-[#D4AF37] selection:text-black">
         {children}
       </body>

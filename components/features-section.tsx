@@ -45,10 +45,7 @@ export function FeaturesSection() {
                   </button>
                 </Link>
              </div>
-             {/* Decorative Background Image */}
-             <div className="absolute bottom-0 right-0 w-full h-1/2 opacity-20 grayscale transition-all duration-700 group-hover:opacity-40 group-hover:scale-105">
-                <img src="https://images.unsplash.com/photo-1693414853994-1080baaacb4d?q=80&w=1065&auto=format&fit=crop" className="w-full h-full object-cover" alt="Indian Soil Restoration" />
-             </div>
+             {/* Decorative Background Image Removed */}
           </motion.div>
 
           {/* Secondary Bento Items */}

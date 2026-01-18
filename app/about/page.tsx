@@ -36,7 +36,7 @@ export default function AboutPage() {
           >
             <span className="text-[10px] uppercase tracking-[0.4em] text-white/40 font-bold block mb-4 md:mb-0">The Heart of Indian Agriculture</span>
             <h1 className="text-[clamp(3.5rem,12vw,9rem)] font-serif font-light text-white leading-[1.1] tracking-tight">
-              Our <span className="italic">Mission</span>
+              About <br /><span className="italic text-white/60">AgriScore</span>
             </h1>
           </motion.div>
         </div>
