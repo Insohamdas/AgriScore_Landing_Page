@@ -13,7 +13,7 @@ export default function DirectAccess() {
   } = Lucide as any
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
+    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-hidden">
       <Navbar />
       
       {/* Background mesh */}
@@ -22,7 +22,7 @@ export default function DirectAccess() {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-[100px] -ml-64 -mb-64" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-48 pb-32 relative min-h-[80vh] flex flex-col justify-center">
+      <div className="max-w-5xl mx-auto px-6 pt-32 md:pt-48 pb-32 relative min-h-[80vh] flex flex-col justify-center">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ export default function DirectAccess() {
            className="text-center"
         >
           
-          <h1 className="text-7xl md:text-9xl font-serif font-light mb-12 leading-tight italic">
+          <h1 className="text-5xl sm:text-7xl md:text-9xl font-serif font-light mb-12 leading-tight italic">
             Direct <span className="not-italic text-white/90">Access</span>
           </h1>
           

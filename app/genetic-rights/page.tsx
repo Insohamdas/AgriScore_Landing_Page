@@ -22,7 +22,7 @@ export default function GeneticRights() {
   const AlertIcon = CircleAlert || AlertCircle || Shield
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
+    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-hidden">
       <Navbar />
       
       {/* Background mesh */}
@@ -31,7 +31,7 @@ export default function GeneticRights() {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-[100px] -ml-64 -mb-64" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-48 pb-32 relative">
+      <div className="max-w-5xl mx-auto px-6 pt-32 md:pt-48 pb-32 relative">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ export default function GeneticRights() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/40 font-bold block">Legal Protocol - India</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
             Genetic <span className="not-italic text-white/90">Rights</span>
           </h1>
           

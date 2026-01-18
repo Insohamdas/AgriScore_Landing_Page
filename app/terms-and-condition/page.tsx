@@ -24,7 +24,7 @@ export default function TermsAndConditions() {
   const AlertIcon = CircleAlert || AlertCircle || Shield
   const SupportIcon = CircleHelp || HelpCircle || MessageSquare
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
+    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-hidden">
       <Navbar />
       
       {/* Background elements */}
@@ -33,7 +33,7 @@ export default function TermsAndConditions() {
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-[100px] -ml-64 -mb-64" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-48 pb-32 relative">
+      <div className="max-w-5xl mx-auto px-6 pt-32 md:pt-48 pb-32 relative">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function TermsAndConditions() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/40 font-bold block">Legal Protocol</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
             Terms and <span className="not-italic text-white/90">Condition</span>
           </h1>
           
@@ -125,10 +125,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="1" className="space-y-6 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">01</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">01</span>
                   <div className="space-y-6">
-                    <h2 className="text-white text-3xl font-serif italic">Our <span className="not-italic">Services</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Our <span className="not-italic">Services</span></h2>
                     <p>
                       The information provided when using the Services is not intended for distribution to or use by any person or entity in any jurisdiction or country where such distribution or use would be contrary to law or regulation or which would subject us to any registration requirement within such jurisdiction or country.
                     </p>
@@ -137,10 +137,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="2" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">02</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">02</span>
                   <div className="space-y-10">
-                    <h2 className="text-white text-3xl font-serif italic">Intellectual <span className="not-italic">Property Rights</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Intellectual <span className="not-italic">Property Rights</span></h2>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                        <div className="p-8 rounded-3xl border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-colors">
@@ -170,10 +170,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="3" className="space-y-6 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">03</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">03</span>
                   <div className="space-y-6">
-                    <h2 className="text-white text-3xl font-serif italic">User <span className="not-italic">Representations</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">User <span className="not-italic">Representations</span></h2>
                     <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {[
                         "Legal capacity to comply",
@@ -193,10 +193,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="4" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">04</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">04</span>
                   <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Prohibited <span className="not-italic">Activities</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Prohibited <span className="not-italic">Activities</span></h2>
                     <p className="text-white/60">As a user of the Services, you agree not to engage in activities including but not limited to:</p>
                     <div className="grid grid-cols-1 gap-3">
                       {[
@@ -221,10 +221,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="5" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">05</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">05</span>
                   <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Governing <span className="not-italic">Law</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Governing <span className="not-italic">Law</span></h2>
                     <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.02] flex items-center gap-8">
                        {Globe && <Globe className="w-12 h-12 text-white/10 hidden md:block" />}
                        <div>
@@ -239,10 +239,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="6" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">06</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">06</span>
                   <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Dispute <span className="not-italic">Resolution</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Dispute <span className="not-italic">Resolution</span></h2>
                     <div className="space-y-8">
                        <div className="space-y-4">
                           <h3 className="text-white font-bold uppercase text-[10px] tracking-[0.3em]">Informal Negotiations</h3>
@@ -264,10 +264,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="7" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">07</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">07</span>
                   <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Legal <span className="not-italic">Disclosures</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Legal <span className="not-italic">Disclosures</span></h2>
                     <div className="space-y-10">
                        <div className="space-y-4">
                           <h3 className="text-white font-bold uppercase text-[10px] tracking-[0.3em]">Disclaimer</h3>
@@ -287,10 +287,10 @@ export default function TermsAndConditions() {
               </section>
 
               <section id="8" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                  <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">08</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                  <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">08</span>
                   <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Contact <span className="not-italic">Us</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Contact <span className="not-italic">Us</span></h2>
                     <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, you may contact us at:</p>
                     <a 
                       href="mailto:myagriscore.official@gmail.com" 

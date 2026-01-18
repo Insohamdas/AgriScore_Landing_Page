@@ -24,7 +24,7 @@ export default function PrivacyNotice() {
   const AlertIcon = CircleAlert || AlertCircle || Shield
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
+    <main className="min-h-screen bg-black text-white selection:bg-white selection:text-black overflow-x-hidden">
       <Navbar />
       
       {/* Background mesh */}
@@ -33,7 +33,7 @@ export default function PrivacyNotice() {
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-white/[0.02] rounded-full blur-[100px] -mr-32 -mb-32" />
       </div>
 
-      <div className="max-w-5xl mx-auto px-6 pt-48 pb-32 relative">
+      <div className="max-w-5xl mx-auto px-6 pt-32 md:pt-48 pb-32 relative">
         <motion.div
            initial={{ opacity: 0, y: 30 }}
            animate={{ opacity: 1, y: 0 }}
@@ -44,7 +44,7 @@ export default function PrivacyNotice() {
             <span className="text-[10px] uppercase tracking-[0.6em] text-white/40 font-bold block">Security Protocol</span>
           </div>
 
-          <h1 className="text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-serif font-light mb-8 leading-tight italic">
             Privacy <span className="not-italic text-white/90">Notice</span>
           </h1>
 
@@ -147,14 +147,14 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="1" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">01</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">01</span>
                    <div className="space-y-10 w-full">
-                    <h2 className="text-white text-3xl font-serif italic">What information <span className="not-italic">we collect</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">What information <span className="not-italic">we collect</span></h2>
                     
                     <div className="p-8 rounded-3xl border border-white/10 bg-white/[0.01]">
                       <h3 className="text-white font-bold text-sm mb-6 uppercase tracking-widest">Personal Information Disclosed</h3>
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-8">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-y-4 gap-x-8">
                         {["Names", "Phone numbers", "Email addresses", "Mailing addresses", "Usernames", "Passwords", "Billing addresses"].map((item, i) => (
                           <div key={i} className="flex items-center gap-2 text-xs text-white/40">
                             <div className="w-1 h-1 bg-white/20 rounded-full" />
@@ -179,10 +179,10 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="2" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">02</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">02</span>
                    <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">How we <span className="not-italic">process data</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">How we <span className="not-italic">process data</span></h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                       {[
                         "Facilitate account creation",
@@ -207,10 +207,10 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="4" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">04</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">04</span>
                    <div className="space-y-8 w-full">
-                    <h2 className="text-white text-3xl font-serif italic">Tracking <span className="not-italic">Technologies</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Tracking <span className="not-italic">Technologies</span></h2>
                     <div className="p-10 rounded-[2rem] border border-white/10 bg-white/[0.03] backdrop-blur-md">
                        <p className="mb-6">We use cookies and similar technologies (like web beacons and pixels) to gather information when you interact with our Services.</p>
                        <div className="flex items-center gap-4 p-4 rounded-xl bg-white/5 border border-white/5">
@@ -226,10 +226,10 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="8" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">08</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">08</span>
                    <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Safety <span className="not-italic">& Security</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Safety <span className="not-italic">& Security</span></h2>
                     <div className="p-10 rounded-[2rem] border border-white/10 bg-white/[0.03] flex items-center gap-10">
                        <div className="hidden md:flex w-20 h-20 rounded-full bg-white/5 items-center justify-center shrink-0">
                           {Shield && <Shield className="w-8 h-8 text-white/20" />}
@@ -243,10 +243,10 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="10" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">10</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">10</span>
                    <div className="space-y-10">
-                    <h2 className="text-white text-3xl font-serif italic">Your <span className="not-italic">Privacy Rights</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Your <span className="not-italic">Privacy Rights</span></h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                        <div className="space-y-4">
                           <h3 className="text-white font-bold uppercase text-[10px] tracking-widest bg-white/5 w-fit px-3 py-1 rounded">Consent</h3>
@@ -262,10 +262,10 @@ export default function PrivacyNotice() {
               </section>
 
               <section id="13" className="space-y-12 pt-16 border-t border-white/5 group">
-                <div className="flex items-start gap-6">
-                   <span className="text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">13</span>
+                <div className="flex items-start gap-4 md:gap-6">
+                   <span className="text-2xl md:text-4xl font-serif text-white/10 group-hover:text-white/30 transition-colors">13</span>
                    <div className="space-y-8">
-                    <h2 className="text-white text-3xl font-serif italic">Contact <span className="not-italic">DPO</span></h2>
+                    <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Contact <span className="not-italic">DPO</span></h2>
                     <p>For questions or comments about this notice, you may contact our Data Protection Officer by email:</p>
                     <a 
                       href="mailto:myagriscore.official@gmail.com" 

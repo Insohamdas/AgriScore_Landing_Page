@@ -261,19 +261,19 @@ export default function CareersPage() {
       </section>
 
       {/* 5. Final CTA */}
-      <section className="pb-40 px-6">
-        <div className="max-w-5xl mx-auto p-20 border border-white/10 bg-white/5 rounded-[2.5rem] relative overflow-hidden group">
+      <section className="pb-24 md:pb-40 px-6">
+        <div className="max-w-5xl mx-auto p-12 md:p-20 border border-white/10 bg-white/5 rounded-[2rem] md:rounded-[2.5rem] relative overflow-hidden group">
            <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-           <div className="relative z-10 text-center space-y-8">
-              <Sparkles className="h-10 w-10 text-[#D4AF37] mx-auto" />
-              <h3 className="text-4xl md:text-6xl font-serif font-light">Join the <br /> <span className="italic">Mission</span></h3>
-              <p className="text-white/40 font-light max-w-xl mx-auto">
+           <div className="relative z-10 text-center space-y-6 md:space-y-8">
+              <Sparkles className="h-8 w-8 md:h-10 md:w-10 text-[#D4AF37] mx-auto" />
+              <h3 className="text-4xl md:text-6xl font-serif font-light leading-tight">Join the <br /> <span className="italic text-[#D4AF37]">Mission</span></h3>
+              <p className="text-white/40 font-light max-w-xl mx-auto text-sm md:text-base leading-relaxed">
                 If you are passionate about restoring our soil and securing the nation's food cycle, your place is with us.
               </p>
-              <div className="pt-8">
-                <button className="h-20 px-16 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[12px] uppercase tracking-[0.4em] font-bold hover:bg-white transition-all shadow-xl group/btn overflow-hidden relative border-none">
+              <div className="pt-6 md:pt-8">
+                <button className="h-16 md:h-20 px-8 md:px-16 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[10px] md:text-[12px] uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold hover:bg-white transition-all shadow-xl group/btn overflow-hidden relative border-none w-full md:w-auto">
                    <span className="relative z-10">Apply for a Position</span>
-                   <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500" />
+                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
                 </button>
               </div>
            </div>
