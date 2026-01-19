@@ -28,15 +28,11 @@ export default function ExperiencePage() {
       <Navbar />
 
       {/* 1. Territory Command (HUD Hero) */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-40 md:pt-20">
-        {/* Cinematic Drone Background */}
-        <div className="absolute inset-0 z-0 scale-110">
-          <img 
-            src="/indian-pattern.png" 
-            alt="Aerial Estate" 
-            className="w-full h-full object-cover opacity-40 grayscale"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black" />
+      <section className="relative h-screen flex items-center justify-center overflow-hidden pt-40 md:pt-20 bg-black">
+        {/* Subtle Gradient Glow */}
+        <div className="absolute inset-0 z-0">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#D4AF37]/5 blur-[120px] rounded-full" />
+          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#1A3C34]/20 to-transparent" />
         </div>
 
         {/* HUD Data Overlay */}
