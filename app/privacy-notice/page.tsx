@@ -268,7 +268,7 @@ export default function PrivacyNotice() {
                     <h2 className="text-white text-2xl md:text-3xl font-serif italic mb-8 leading-snug">Contact <span className="not-italic">DPO</span></h2>
                     <p className="text-sm md:text-base">For questions or comments about this notice, you may contact our Data Protection Officer by email:</p>
                     <a 
-                      href="mailto:myagriscore.official@gmail.com" 
+                      href="mailto:dpo@myagriscore.com" 
                       className="group/mail flex flex-col sm:flex-row items-center sm:items-start md:items-center gap-6 p-6 md:p-10 rounded-3xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-500 w-full overflow-hidden"
                     >
                       <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover/mail:scale-110 transition-transform duration-500 shrink-0">
@@ -276,7 +276,7 @@ export default function PrivacyNotice() {
                       </div>
                       <div className="text-center sm:text-left w-full overflow-hidden">
                         <p className="text-xs text-white/40 uppercase tracking-widest font-bold mb-1">Send an Enquiry</p>
-                        <p className="text-lg sm:text-xl md:text-2xl text-white font-serif italic break-all sm:break-normal">myagriscore.official@gmail.com</p>
+                        <p className="text-lg sm:text-xl md:text-2xl text-white font-serif italic break-all sm:break-normal">dpo@myagriscore.com</p>
                       </div>
                     </a>
                    </div>

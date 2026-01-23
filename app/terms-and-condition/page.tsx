@@ -86,7 +86,7 @@ export default function TermsAndConditions() {
                   <p className="text-xs text-white/40 leading-relaxed">
                     Need clarification on our terms? Reach out to our legal department.
                   </p>
-                  <a href="mailto:myagriscore.official@gmail.com" className="text-[10px] text-white uppercase tracking-widest font-bold mt-4 block hover:underline">
+                  <a href="mailto:support@myagriscore.com" className="text-[10px] text-white uppercase tracking-widest font-bold mt-4 block hover:underline">
                     Get Support
                   </a>
                 </div>
@@ -162,7 +162,7 @@ export default function TermsAndConditions() {
                     <div className="space-y-6">
                       <p className="text-white/90 font-medium">Any breach of these Intellectual Property Rights will constitute a material breach and your right to use our Services will terminate immediately.</p>
                       <p>
-                        If you wish to make any use of the Services, Content, or Marks other than as set out in this section, please address your request to: <a href="mailto:myagriscore.official@gmail.com" className="text-white underline decoration-white/20 underline-offset-4 hover:decoration-white transition-colors">myagriscore.official@gmail.com</a>.
+                        If you wish to make any use of the Services, Content, or Marks other than as set out in this section, please address your request to: <a href="mailto:support@myagriscore.com" className="text-white underline decoration-white/20 underline-offset-4 hover:decoration-white transition-colors">support@myagriscore.com</a>.
                       </p>
                     </div>
                   </div>
@@ -293,7 +293,7 @@ export default function TermsAndConditions() {
                     <h2 className="text-white text-2xl md:text-3xl font-serif italic leading-snug">Contact <span className="not-italic">Us</span></h2>
                     <p className="text-sm md:text-base">In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, you may contact us at:</p>
                     <a 
-                      href="mailto:myagriscore.official@gmail.com" 
+                      href="mailto:support@myagriscore.com" 
                       className="group/mail flex flex-col sm:flex-row items-center sm:items-start md:items-center gap-6 p-6 md:p-10 rounded-3xl border border-white/10 bg-white/[0.03] hover:bg-white/[0.06] transition-all duration-500 w-full overflow-hidden"
                     >
                       <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center group-hover/mail:scale-110 transition-transform duration-500 shrink-0">
@@ -301,7 +301,7 @@ export default function TermsAndConditions() {
                       </div>
                       <div className="text-center sm:text-left w-full overflow-hidden">
                         <p className="text-xs text-white/40 uppercase tracking-widest font-bold mb-1">Send an Enquiry</p>
-                        <p className="text-lg sm:text-xl md:text-2xl text-white font-serif italic break-all sm:break-normal">myagriscore.official@gmail.com</p>
+                        <p className="text-lg sm:text-xl md:text-2xl text-white font-serif italic break-all sm:break-normal">support@myagriscore.com</p>
                       </div>
                     </a>
                   </div>

@@ -14,7 +14,8 @@ const {
   Cpu, 
   Microscope, 
   Sparkles, 
-  Linkedin 
+  Linkedin,
+  Mail 
 } = Lucide as any
 
 const XIcon = ({ className }: { className?: string }) => (
@@ -221,6 +222,9 @@ export default function CareersPage() {
                   <p className="text-emerald-500 uppercase tracking-[0.3em] text-[10px] mt-2">Director & Founder</p>
                 </div>
                 <div className="flex gap-3">
+                  <a href="mailto:soham@myagriscore.com" className="p-2.5 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all">
+                    {Mail && <Mail className="h-3.5 w-3.5" />}
+                  </a>
                   <a href="https://x.com/insohamdas" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all">
                     <XIcon className="h-3.5 w-3.5" />
                   </a>
@@ -247,6 +251,9 @@ export default function CareersPage() {
                   <p className="text-emerald-500 uppercase tracking-[0.3em] text-[10px] mt-2">Director & Co-Founder</p>
                 </div>
                 <div className="flex gap-3">
+                  <a href="mailto:piyush@myagriscore.com" className="p-2.5 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all">
+                    {Mail && <Mail className="h-3.5 w-3.5" />}
+                  </a>
                   <a href="https://x.com/piyushsingh0069?s=11" target="_blank" rel="noopener noreferrer" className="p-2.5 rounded-full border border-white/10 hover:bg-white hover:text-black transition-all">
                     <XIcon className="h-3.5 w-3.5" />
                   </a>
@@ -270,11 +277,23 @@ export default function CareersPage() {
               <p className="text-white/40 font-light max-w-xl mx-auto text-sm md:text-base leading-relaxed">
                 If you are passionate about restoring our soil and securing the nation's food cycle, your place is with us.
               </p>
-              <div className="pt-6 md:pt-8">
-                <button className="h-16 md:h-20 px-8 md:px-16 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[10px] md:text-[12px] uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold hover:bg-white transition-all shadow-xl group/btn overflow-hidden relative border-none w-full md:w-auto">
+              <div className="pt-6 md:pt-8 flex flex-col items-center gap-6">
+                <a 
+                  href="mailto:careers@myagriscore.com"
+                  className="h-16 md:h-20 px-8 md:px-16 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[10px] md:text-[12px] uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold hover:bg-white transition-all shadow-xl group/btn overflow-hidden relative border-none w-full md:w-auto flex items-center justify-center"
+                >
                    <span className="relative z-10">Apply for a Position</span>
                    <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
-                </button>
+                </a>
+                <div className="flex flex-col items-center space-y-2">
+                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">Direct Reachout</span>
+                  <a 
+                    href="mailto:careers@myagriscore.com" 
+                    className="text-[#D4AF37] font-light hover:text-white transition-colors"
+                  >
+                    careers@myagriscore.com
+                  </a>
+                </div>
               </div>
            </div>
         </div>

@@ -80,29 +80,39 @@ export default function ContactPage() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              <div className="space-y-4 group">
+              <a 
+                href="https://whatsapp.com/channel/0029VbC5yhMGE56kIAeyBi3K" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="space-y-4 group block"
+              >
                  <div className="w-12 h-12 rounded-full border border-[#1A3C34]/10 flex items-center justify-center group-hover:bg-[#1A3C34] group-hover:text-white transition-all">
                     <MessageCircle className="h-5 w-5" />
                  </div>
                  <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#D4AF37]">Secure Chat</h4>
                  <p className="text-sm font-medium">WhatsApp Integrated</p>
-              </div>
+              </a>
 
-              <div className="space-y-4 group">
+              <a href="mailto:support@myagriscore.com" className="space-y-4 group block">
                  <div className="w-12 h-12 rounded-full border border-[#1A3C34]/10 flex items-center justify-center group-hover:bg-[#1A3C34] group-hover:text-white transition-all">
                     <Mail className="h-5 w-5" />
                  </div>
                  <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#D4AF37]">Neural Mail</h4>
                  <p className="text-sm font-medium">support@myagriscore.com</p>
-              </div>
+              </a>
 
-              <div className="space-y-4 group">
+              <a 
+                href="https://maps.app.goo.gl/1ikWFwJ1Mh1k9Z5a9" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="space-y-4 group block"
+              >
                  <div className="w-12 h-12 rounded-full border border-[#1A3C34]/10 flex items-center justify-center group-hover:bg-[#1A3C34] group-hover:text-white transition-all">
                     <Globe className="h-5 w-5" />
                  </div>
                  <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-[#D4AF37]">Mission HQ</h4>
                  <p className="text-sm font-medium">Kolkata, West Bengal, India</p>
-              </div>
+              </a>
             </div>
 
             <div className="p-8 bg-[#1A3C34] text-white rounded-sm space-y-4 relative overflow-hidden">
