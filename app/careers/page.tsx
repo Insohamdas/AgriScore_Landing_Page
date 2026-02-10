@@ -268,33 +268,89 @@ export default function CareersPage() {
       </section>
 
       {/* 5. Final CTA */}
-      <section className="pb-24 md:pb-40 px-6">
-        <div className="max-w-5xl mx-auto p-12 md:p-20 border border-white/10 bg-white/5 rounded-[2rem] md:rounded-[2.5rem] relative overflow-hidden group">
-           <div className="absolute inset-0 bg-emerald-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000" />
-           <div className="relative z-10 text-center space-y-6 md:space-y-8">
-              <Sparkles className="h-8 w-8 md:h-10 md:w-10 text-[#D4AF37] mx-auto" />
-              <h3 className="text-4xl md:text-6xl font-serif font-light leading-tight">Join the <br /> <span className="italic text-[#D4AF37]">Mission</span></h3>
-              <p className="text-white/40 font-light max-w-xl mx-auto text-sm md:text-base leading-relaxed">
-                If you are passionate about restoring our soil and securing the nation's food cycle, your place is with us.
-              </p>
-              <div className="pt-6 md:pt-8 flex flex-col items-center gap-6">
-                <a 
-                  href="mailto:careers@myagriscore.com"
-                  className="h-16 md:h-20 px-8 md:px-16 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[10px] md:text-[12px] uppercase tracking-[0.3em] md:tracking-[0.4em] font-bold hover:bg-white transition-all shadow-xl group/btn overflow-hidden relative border-none w-full md:w-auto flex items-center justify-center"
-                >
-                   <span className="relative z-10">Apply for a Position</span>
-                   <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
-                </a>
-                <div className="flex flex-col items-center space-y-2">
-                  <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">Direct Reachout</span>
-                  <a 
-                    href="mailto:careers@myagriscore.com" 
-                    className="text-[#D4AF37] font-light hover:text-white transition-colors"
-                  >
-                    careers@myagriscore.com
-                  </a>
+      <section className="py-40 px-6 relative overflow-hidden text-white">
+        {/* Cinematic Backdrop */}
+        <div className="absolute inset-0 z-0">
+           <img 
+             src="https://images.unsplash.com/photo-1557233519-be3442ba7843?q=80&w=2670&auto=format&fit=crop" 
+             alt="Future Agriculture" 
+             className="w-full h-full object-cover grayscale opacity-20"
+           />
+           <div className="absolute inset-0 bg-gradient-to-b from-black via-black/80 to-black" />
+           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-emerald-500/10 via-transparent to-transparent opacity-50" />
+        </div>
+
+        <div className="max-w-7xl mx-auto relative z-10">
+           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+                className="space-y-12"
+              >
+                <div className="inline-flex items-center gap-4 px-6 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/5 backdrop-blur-md">
+                   <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                   <span className="text-[10px] uppercase tracking-[0.5em] text-emerald-500/80 font-bold">Mission Enrollment Open</span>
                 </div>
-              </div>
+
+                <div className="space-y-6">
+                  <h2 className="text-6xl md:text-8xl font-serif font-light leading-[1.1] tracking-tighter">
+                    Join the <br /> 
+                    <span className="italic text-[#D4AF37]">Architects.</span>
+                  </h2>
+                  <p className="text-xl md:text-2xl text-white/40 font-light leading-relaxed max-w-xl">
+                    We aren't just building a company; we are engineering the biological resilience of our planet. Your legacy starts at the root.
+                  </p>
+                </div>
+
+                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
+                   <div className="space-y-2">
+                      <span className="text-3xl font-serif text-[#D4AF37] italic">01</span>
+                      <p className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Uncompromising Quality</p>
+                   </div>
+                   <div className="space-y-2">
+                      <span className="text-3xl font-serif text-[#D4AF37] italic">02</span>
+                      <p className="text-[10px] uppercase tracking-widest text-white/40 font-bold">Radical Inclusion</p>
+                   </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+                className="bg-white/[0.03] border border-white/10 backdrop-blur-xl p-12 md:p-20 rounded-[3rem] space-y-10"
+              >
+                <div className="space-y-4">
+                  <h3 className="text-3xl font-serif font-light">Initiate Your Journey</h3>
+                  <p className="text-white/40 font-light">Send us your narrative. We are more interested in your obsession than your resume.</p>
+                </div>
+
+                <div className="space-y-6">
+                  <a 
+                    href="mailto:careers@myagriscore.com"
+                    className="group/btn relative w-full h-20 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[12px] uppercase tracking-[0.4em] font-bold hover:bg-white transition-all shadow-2xl flex items-center justify-center overflow-hidden"
+                  >
+                     <span className="relative z-10">Apply Now</span>
+                     <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
+                  </a>
+
+                  <div className="flex flex-col items-center gap-2">
+                    <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">Direct Channel</span>
+                    <a href="mailto:careers@myagriscore.com" className="text-[#D4AF37] hover:text-white transition-colors">
+                      careers@myagriscore.com
+                    </a>
+                  </div>
+                </div>
+
+                <div className="pt-8 flex justify-center gap-8 opacity-20">
+                   <Microscope className="h-6 w-6" />
+                   <Cpu className="h-6 w-6" />
+                   <Globe className="h-6 w-6" />
+                </div>
+              </motion.div>
            </div>
         </div>
       </section>
