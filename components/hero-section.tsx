@@ -14,14 +14,19 @@ export function HeroSection() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplash(false)
-    }, 2500)
+    }, 2000)
 
+    let frameId: number;
     const handleMouseMove = (e: MouseEvent | TouchEvent) => {
-      if ('touches' in e) {
-        setMousePosition({ x: e.touches[0].clientX, y: e.touches[0].clientY })
-      } else {
-        setMousePosition({ x: e.clientX, y: e.clientY })
-      }
+      if (frameId) cancelAnimationFrame(frameId);
+      
+      frameId = requestAnimationFrame(() => {
+        if ('touches' in e) {
+          setMousePosition({ x: e.touches[0].clientX, y: e.touches[0].clientY })
+        } else {
+          setMousePosition({ x: e.clientX, y: e.clientY })
+        }
+      });
     }
     window.addEventListener("mousemove", handleMouseMove)
     window.addEventListener("touchmove", handleMouseMove)
@@ -53,16 +58,15 @@ export function HeroSection() {
             <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]" />
             
             <motion.div
-              initial={{ opacity: 0, scale: 0.8, filter: "blur(20px)" }}
+              initial={{ opacity: 0, scale: 0.95 }}
               animate={{ 
-                opacity: [0, 1, 0.8, 1, 0],
-                scale: [0.8, 1, 0.98, 1.02, 1.1],
-                filter: ["blur(20px)", "blur(0px)", "blur(2px)", "blur(0px)", "blur(40px)"]
+                opacity: [0, 1, 1, 0.9, 0],
+                scale: [0.95, 1, 1, 1.02, 1.05],
               }}
               transition={{ 
-                duration: 3,
-                times: [0, 0.2, 0.5, 0.8, 1],
-                ease: [0.16, 1, 0.3, 1] 
+                duration: 2.2,
+                times: [0, 0.2, 0.6, 0.8, 1],
+                ease: "easeInOut" 
               }}
               className="relative"
             >
@@ -74,32 +78,24 @@ export function HeroSection() {
               
               {/* Outstanding: Ring Explosion Effect */}
               <motion.div 
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: [0, 1.5, 2.5], opacity: [0, 0.5, 0] }}
-                transition={{ duration: 2, delay: 0.5, ease: "easeOut" }}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: [0.8, 1.5, 2.2], opacity: [0, 0.5, 0] }}
+                transition={{ duration: 1.5, delay: 0.2, ease: "easeOut" }}
                 className="absolute inset-0 border-2 border-[#D4AF37] rounded-full"
               />
               <motion.div 
-                initial={{ scale: 0, opacity: 0 }}
-                animate={{ scale: [0, 2, 4], opacity: [0, 0.3, 0] }}
-                transition={{ duration: 2.5, delay: 0.7, ease: "easeOut" }}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: [0.8, 1.8, 3], opacity: [0, 0.3, 0] }}
+                transition={{ duration: 1.8, delay: 0.3, ease: "easeOut" }}
                 className="absolute inset-0 border border-white/20 rounded-full"
               />
 
               <motion.div 
-                animate={{ opacity: [0, 1, 0] }}
+                animate={{ opacity: [0, 0.4, 0] }}
                 transition={{ duration: 2, repeat: Infinity }}
-                className="absolute -inset-20 bg-[#D4AF37]/20 blur-[100px] rounded-full"
+                className="absolute -inset-20 bg-[#D4AF37]/20 blur-[80px] rounded-full"
               />
             </motion.div>
-
-            {/* Scanning Line */}
-            <motion.div 
-              initial={{ top: "-10%" }}
-              animate={{ top: "110%" }}
-              transition={{ duration: 3, ease: "easeInOut" }}
-              className="absolute left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#D4AF37]/50 to-transparent z-[1001]"
-            />
           </motion.div>
         )}
       </AnimatePresence>
