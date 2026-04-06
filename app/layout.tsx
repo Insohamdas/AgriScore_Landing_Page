@@ -2,6 +2,7 @@ import type React from "react"
 import { Inter, Cormorant_Garamond } from "next/font/google"
 import "./globals.css"
 import { Metadata, Viewport } from "next"
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -103,6 +104,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans bg-black text-white selection:bg-[#D4AF37] selection:text-black">
         {children}
+        <Toaster />
       </body>
     </html>
   )

@@ -3,8 +3,8 @@
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
-import { useRef } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import * as Lucide from "lucide-react"
 
 const { 
@@ -329,13 +329,13 @@ export default function CareersPage() {
                 </div>
 
                 <div className="space-y-6">
-                  <a 
-                    href="mailto:careers@myagriscore.com"
+                  <Link 
+                    href="/apply"
                     className="group/btn relative w-full h-20 rounded-full bg-[#D4AF37] text-[#1A3C34] text-[12px] uppercase tracking-[0.4em] font-bold hover:bg-white transition-all shadow-2xl flex items-center justify-center overflow-hidden"
                   >
                      <span className="relative z-10">Apply Now</span>
                      <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-500" />
-                  </a>
+                  </Link>
 
                   <div className="flex flex-col items-center gap-2">
                     <span className="text-[10px] uppercase tracking-[0.3em] text-white/30 font-bold">Direct Channel</span>
