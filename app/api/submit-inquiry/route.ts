@@ -6,10 +6,10 @@ export async function POST(req: Request) {
 
     // The Google Apps Script deployed as a web app URL.
     // E.g., https://script.google.com/macros/s/AKfycb.../exec
-    const googleAppScriptUrl = process.env.GOOGLE_SHEET_INQUIRY_WEBHOOK_URL;
+    const googleAppScriptUrl = process.env.INQUIRY_WEBHOOK_URL;
 
     if (!googleAppScriptUrl) {
-      console.warn("GOOGLE_SHEET_INQUIRY_WEBHOOK_URL is not set.");
+      console.warn("INQUIRY_WEBHOOK_URL is not set.");
       // We return OK here just so the UI doesn't crash during development if you haven't set up the webhook yet.
       // In production, you might want to return a 500 error instead.
       return NextResponse.json(
